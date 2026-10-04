@@ -1,4 +1,6 @@
 import CollectionPage from "@/components/collections/CollectionPage";
+import { notFound } from "next/navigation";
+import { collection } from "@/data/collection";
 
 type PageProps = {
     params: Promise<{
@@ -8,9 +10,9 @@ type PageProps = {
 
 export default async function Page({params} : PageProps) {
     const {slug} = await params;
-  return (
-    <>
-        <CollectionPage slug={slug} />
-    </>
-  )
+    if (!collection[slug as keyof typeof collection]) {
+      notFound();
+    }
+  
+    return <CollectionPage slug={slug} />;
 }
