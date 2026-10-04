@@ -1,36 +1,132 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kylie Cosmetics Clone
+
+A responsive e-commerce frontend inspired by the Kylie Cosmetics website, built with Next.js, TypeScript, and Tailwind CSS.
+
+## Overview
+
+This project is a frontend practice and talent project created to demonstrate modern web development skills through the recreation of a cosmetics e-commerce experience.
+
+The focus of the project is on responsive design, reusable components, dynamic pages, navigation, product layouts, and interactive user interfaces.
+
+> This is a frontend-only project and does not include a backend or database.
+
+## Features
+
+* Responsive design for desktop, tablet, and mobile
+* Responsive navigation and mobile menu
+* Mega menu navigation
+* Product collection pages
+* Dynamic collection routes
+* Product detail pages
+* Responsive product grids
+* Reusable product components
+* Interactive UI elements
+* Kylie Rewards page
+* FAQ section
+* Custom typography and styling
+* Mobile-first responsive layouts
+
+## Tech Stack
+
+* **Next.js**
+* **React**
+* **TypeScript**
+* **Tailwind CSS**
+* **JavaScript**
+* **HTML5**
+* **CSS3**
+* **Lucide React**
+
+## Project Structure
+
+```text
+kylie-cosmetics-clone/
+├── app/
+│   ├── account/
+|   ├── discover/
+│   └── ...
+├── components/
+│   ├── collections/
+|   |── rewards/
+│   └── ...
+├── public/
+│   ├── images/
+│   └── fonts/
+├── package.json
+├── tsconfig.json
+└── README.md
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Make sure you have Node.js installed on your computer.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/sogandshahnaz/kylie-cosmetics-clone.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd kylie-cosmetics-clone
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+### Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser to view the project.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create a production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+To start the production server after building:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Goals
 
-## Deploy on Vercel
+This project was created to practice and demonstrate:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Modern React development
+* Next.js App Router
+* TypeScript
+* Tailwind CSS
+* Responsive web design
+* Component-based architecture
+* Dynamic routing
+* UI/UX implementation
+* Building a realistic e-commerce frontend
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Disclaimer
+
+This project is an independent frontend practice project inspired by the Kylie Cosmetics website.
+
+It is not affiliated with, sponsored by, or endorsed by Kylie Cosmetics.
+
+## Author
+
+**Sogand Shahnaz**
+
+Frontend Developer
