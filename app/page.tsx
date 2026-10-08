@@ -41,12 +41,10 @@ export default function Home() {
             className="object-cover"
            />
            </div>
-           
 
            <div className="sm:inline absolute left-16 top-1/2 -translate-y-1/2 w-100 hidden">
               <p className={`${univers.className} text-[#B3848F] text-sm`}>JUST DROPPED</p>
               <h1 className={`${univers.className} text-[#B3848F] text-3xl my-1.5`}>PLUMP IN A KIT</h1>
-              <h1>updated</h1>
               <p className="w-60 text-lg my-4">the iconic lip kit now in plumping formulas with a lightweight, matte finish.</p>
               <Button>shop now</Button>
            </div>
