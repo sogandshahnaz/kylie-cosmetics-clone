@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function Page() {
   return (
     <section className="flex h-[650px] bg-[#F8F1F4]">
-        <div className="mt-[150px] w-full flex justify-center items-end">
+        <div className="mt-[150px] w-full flex justify-center items-end sm:mx-10">
             <div className="flex flex-col text-center">
               <h1 className={`${univers.className} uppercase text-[#B3848F] text-3xl`}>login</h1>  
               <div className="flex flex-col gap-4 text-sm mt-5">
