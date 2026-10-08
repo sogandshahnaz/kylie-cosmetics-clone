@@ -7,63 +7,78 @@ export const mobileMenu: MobileMenuItem[] = [
         columns: [
             {
                 image: '/images/mobileMenu/new.avif',
-                title: 'new +'
+                title: 'new +',
+                href: '/collections/kylie-cosmetics-new'
             },
             {
                 image: '/images/mobileMenu/bestSellers.avif',
-                title: 'best sellers'
+                title: 'best sellers',
+                href: '/collections/kylie-cosmetics-best-sellers'
             },
             {
                 image: '/images/mobileMenu/lips.avif',
-                title: 'lips +'
+                title: 'lips +',
+                href: '/collections/kylie-cosmetics-lips'
             },
             {
                 image: '/images/mobileMenu/face.webp',
-                title: 'face +'
+                title: 'face +',
+                href: '/collections/kylie-cosmetics-face'
             },
             {
                 image: '/images/mobileMenu/eyesBrows.avif',
-                title: 'eyes & brows +'
+                title: 'eyes & brows +',
+                href: '/collections/kylie-cosmetics-eyes-brows'
             },
             {
                 image: '/images/mobileMenu/paletess.avif',
-                title: 'palettes'
+                title: 'palettes',
+                href: '/collections/kylie-cosmetics-plattes'
             },
             {
                 image: '/images/mobileMenu/tools.avif',
-                title: 'tools & accessories'
+                title: 'tools & accessories',
+                href: '/collections/kylie-cosmetics-tools'
             },
             {
                 image: '/images/mobileMenu/bundle-sets.avif',
-                title: 'bundles & sets'
+                title: 'bundles & sets',
+                href: '/collections/kylie-cosmetics-bundles'
             },
             {
                 image: '/images/mobileMenu/lipDuos.avif',
-                title: 'lip duos'
+                title: 'lip duos',
+                href: '/collections/kylie-cosmetics-lip-duos'
             },
             {
                 image: '/images/mobileMenu/kyliesFav.avif',
-                title: "kylie's favorites"
+                title: "kylie's favorites",
+                href: '/collections/kylie-cosmetics-favorites'
             },
             {
                 image: '/images/mobileMenu/kingKylie.avif',
-                title: 'king kylie collection'
+                title: 'king kylie collection',
+                href: '/collections/kylie-cosmetics-king-kylie'
             },
             {
                 image: '/images/mobileMenu/onlineEx.avif',
-                title: 'online exclusives'
+                title: 'online exclusives',
+                href: '/collections/kylie-cosmetics-exclusives'
             },
             {
                 image: '/images/mobileMenu/travel.avif',
-                title: 'travel essentials'
+                title: 'travel essentials',
+                href: '/collections/kylie-cosmetics-travel'
             },
             {
                 image: '/images/mobileMenu/virtual.avif',
-                title: 'virtual try-on'
+                title: 'virtual try-on',
+                href: '/collections/kylie-cosmetics-virtual'
             },
             {
                 image: '/images/mobileMenu/skinCare.avif',
-                title: 'skincare'
+                title: 'skincare',
+                href: '/collections/kylie-cosmetics-skincare'
             },
         ],
         featured: [

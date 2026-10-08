@@ -28,6 +28,7 @@ export default function FeaturedCard({
         relative
         h-full
         min-h-[450px]
+        bg-[#f3e9ed]
         sm:min-h-[500px]
         lg:min-h-[600px]
       "

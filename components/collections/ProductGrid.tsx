@@ -25,6 +25,7 @@ export default function ProductGrid({
         <ProductCard
           key={product.id}
           product={product}
+          priority
         />
       ))}
 
@@ -58,16 +59,15 @@ export default function ProductGrid({
         <ProductCard
           key={product.id}
           product={product}
+          priority
         />
       ))}
 
       {/* FEATURED IMAGE */}
-      
       <FeaturedCard
         image={featuredImage}
         href={featuredHref}
       />
-
 
       {products.slice(2, 4).map((product) => (
         <ProductCard
@@ -109,6 +109,7 @@ export default function ProductGrid({
         loop
         muted
         playsInline
+        preload="none"
         className="h-full w-full object-cover"
       />
     </div>

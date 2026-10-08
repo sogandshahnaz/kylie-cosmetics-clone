@@ -10,18 +10,34 @@ import ShopByCategory from "@/components/products/shopByCategory/ShopByCategory"
 import Button from "@/components/ui/Button";
 import { univers } from "@/public/fonts/fonts";
 import Image from "next/image";
+import mainBg from "@/public/images/background.webp"
+import mobileBg from "@/public/images/bgSmallScreen.webp"
 
 export default function Home() {
   return (
     <main className="bg-[#F8F1F4]"> 
       <section className="relative min-h-screen text-[#393939] cursor-pointer"> 
-         <div className="absolute inset-0 bg-cover bg-center" 
-           style={{ backgroundImage: "url('/images/background.jpg')", }} />
-           <div className="absolute bg-black w-full sm:hidden h-full md:hidden lg:hidden">
+          {/* DESKTOP HERO */}
+          <div className="absolute inset-0 hidden sm:block">
             <Image
-            src='/images/bgSmallScreen.webp'
+              src={mainBg}
+              alt=""
+              fill
+              priority
+              sizes="100vw"
+               placeholder="blur"
+              className="object-cover object-center"
+            />
+          </div>
+
+         {/* MOBILE HERO */}
+           
+           <div className="absolute w-full sm:hidden h-full md:hidden lg:hidden">
+            <Image
+            src={mobileBg}
             alt="background small screen"
             fill
+            placeholder="blur"
             className="object-cover"
            />
            </div>

@@ -19,6 +19,7 @@ export type MobileMenuItem = {
     columns?: {
       image: string;
       title: string;
+      href?: string
     }[];
     featured?: {
       image: string;
@@ -160,7 +161,7 @@ export default function MobileMenu({
       {activeMenu.columns?.map((column) => (
         <Link
           key={column.title}
-          href="#"
+          href={column.href ? column.href : '#'}
           className="
             flex
             items-center

@@ -7,25 +7,26 @@ type RewardProductProps = {
 
 export default function RewardProductCard({product} : RewardProductProps) {
   return (
-    <article className="group border border-[#dadada] rounded-md h-95">
-        <div className="relative aspect-square overflow-hidden bg-[#f5f5f5]">
-        <Image
-          src={product.image}
-          alt={product.name}
-          fill
-          className="object-contain "
-        />
-      </div>
+    <article className="group overflow-hidden rounded-md border border-[#dadada] bg-white">
+    <div className="relative aspect-square overflow-hidden bg-[#f5f5f5]">
+      <Image
+        src={product.image}
+        alt={product.name}
+        fill
+        sizes="(max-width: 639px) 85vw, (max-width: 1023px) 45vw, 23vw"
+        className="object-contain transition-transform duration-500 group-hover:scale-105"
+      />
+    </div>
 
-      <div className="mt-4 mb-3 text-center text-[#272727] font-extrabold">
-        <h3 className="text-xl">
-          {product.name}
-        </h3>
+    <div className="flex h-28 flex-col items-center px-3 py-4 text-center font-extrabold text-[#272727] sm:h-30 sm:px-4">
+      <h3 className="line-clamp-2 text-base leading-tight sm:text-lg lg:text-xl">
+        {product.name}
+      </h3>
 
-        <p className="mt-2">
-          {product.points} points
-        </p>
-      </div>
-    </article>
+      <p className="mt-auto text-sm sm:text-bas">
+        {product.points} points
+      </p>
+    </div>
+  </article>
   )
 }

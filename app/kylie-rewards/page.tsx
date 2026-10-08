@@ -15,7 +15,7 @@ export default function page() {
        <section 
        className=' relative
     mt-[70px]
-    h-[860px]
+    h-[795px]
    
 
     sm:mt-[80px]
