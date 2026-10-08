@@ -4,6 +4,7 @@ import "./globals.css";
 import localFont from 'next/font/local'
 import Navbar from "@/components/layout/navbar/Navbar";
 import Footer from "@/components/layout/footer/Footer";
+import InitialLoader from "@/components/ui/InitialLoader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${ttChocolates.className} ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <InitialLoader/>
           <Navbar/>
         {children}
         <Footer/>

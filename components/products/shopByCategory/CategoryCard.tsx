@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image"
+import ImageWithLoader from "@/components/ui/ImageWithLoader";
 import { univers } from "@/public/fonts/fonts"
 
 type CategoryCardProps = {
@@ -26,10 +27,11 @@ export default function CategoryCard({name, image, video, hoverImage}: CategoryC
     "
   >
     {/* Main Image */}
-    <Image
+    <ImageWithLoader
       src={image}
       alt={name}
       fill
+       sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 416px"
       className="object-cover"
     />
 

@@ -16,3 +16,13 @@
 body {
     overflow-x: hidden;
   }
+
+  @keyframes loader {
+    from {
+      transform: scaleX(0);
+    }
+  
+    to {
+      transform: scaleX(1);
+    }
+  }

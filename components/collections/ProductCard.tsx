@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import type { Product } from "@/types/product"
 import Rating from "./Rating"
+import ImageWithLoader from "../ui/ImageWithLoader"
 
 type ProductCardProps = {
     product: Product
@@ -27,7 +28,7 @@ export default function ProductCard({product, priority = false} : ProductCardPro
           sm:aspect-square
         "
       >
-        <Image
+        <ImageWithLoader
           src={product.image}
           alt={product.name}
           fill
