@@ -1,4 +1,5 @@
-import Image from "next/image"
+// import Image from "next/image"
+import ImageWithLoader from "../ui/ImageWithLoader"
 import type { RewardProduct } from "@/types/rewards"
 
 type RewardProductProps = {
@@ -9,7 +10,7 @@ export default function RewardProductCard({product} : RewardProductProps) {
   return (
     <article className="group overflow-hidden rounded-md border border-[#dadada] bg-white">
     <div className="relative aspect-square overflow-hidden bg-[#f5f5f5]">
-      <Image
+      <ImageWithLoader
         src={product.image}
         alt={product.name}
         fill

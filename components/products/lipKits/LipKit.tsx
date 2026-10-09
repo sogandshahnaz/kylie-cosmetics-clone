@@ -1,6 +1,7 @@
-import Image from "next/image"
+// import Image from "next/image"
 import Button from "@/components/ui/Button"
 import { univers } from "@/public/fonts/fonts"
+import ImageWithLoader from "@/components/ui/ImageWithLoader"
 
 type ProductCardProps = {
     name: string;
@@ -11,7 +12,7 @@ export default function LipKit({name, image}: ProductCardProps) {
   return (
     <article>
       <div className="relative h-[650px] w-full overflow-hidden cursor-pointer">
-        <Image
+        <ImageWithLoader
           src={image}
           alt={name}
           fill
